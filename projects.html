@@ -163,6 +163,19 @@
     <script src="assets/mail/contact_me.js"></script>
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('[data-toggle="popover_linkedin"]').popover({
+                html: true
+            });
+            $('[data-toggle="popover_mail"]').popover({
+                html: true
+            });
+            $('[data-toggle="popover_github"]').popover({
+                html: true
+            });
+        });
+    </script>
 </body>
 
 </html>
