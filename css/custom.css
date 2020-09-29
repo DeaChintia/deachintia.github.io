@@ -10,6 +10,12 @@
     background-color: #A1ACBD;
 }
 
+.fake-link {
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 .card-img-top {
     width: 100%;
     object-fit: cover;
