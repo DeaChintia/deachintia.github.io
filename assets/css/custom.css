@@ -10,10 +10,13 @@
     background-color: #A1ACBD;
 }
 
-.fake-link {
-    color: blue;
-    text-decoration: underline;
-    cursor: pointer;
+.math {
+    font-family: math;
+}
+
+.popover-body {
+    text-align: center;
+    font-weight: bold;
 }
 
 .card-img-top {
@@ -53,7 +56,6 @@
     color: #fff;
     text-align: center;
     position: relative;
-    font-size: 20px;
     padding: 10px;
     background: rgba(0, 0, 0, 0.6);
     -webkit-transition: background .35s ease-out;
@@ -67,7 +69,6 @@
     color: #FFF;
     padding: 0.5em 0 1em;
     opacity: 0;
-    font-size: 17px;
     filter: alpha(opacity=0);
     -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
     transition: opacity 0.35s, transform 0.35s;
@@ -83,4 +84,27 @@
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
     background: rgba(0, 0, 0, 0);
+}
+
+.table td.fit,
+.table th.fit {
+    white-space: nowrap;
+    width: 1%;
+}
+
+.custom-font-style {
+    font-size: 1.15rem;
+    font-weight: 200;
+}
+
+@media (min-width: 768px) {
+    h2.card-title {
+        font-size: 22px;
+    }
+}
+
+@media (min-width: 992px) {
+    h2.card-title {
+        font-size: 18px;
+    }
 }
