@@ -92,9 +92,35 @@
     width: 1%;
 }
 
-.custom-font-style {
+p,li,table {
     font-size: 1.15rem;
     font-weight: 200;
+}
+
+.figure-caption {
+    font-size: 1rem;
+}
+
+ol.ref {
+    counter-reset: my-awesome-counter;
+    list-style: none;
+}
+
+ol.ref li {
+    margin: 0 0 0.5rem 0;
+    counter-increment: my-awesome-counter;
+    position: relative;
+}
+
+ol.ref li::before {
+    content: "[" counter(my-awesome-counter) "]";
+    font-weight: bold;
+    position: absolute;
+    --size: 32px;
+    left: calc(-1 * var(--size) - 10px);
+    width: var(--size);
+    height: var(--size);
+    text-align: center;
 }
 
 @media (min-width: 768px) {
