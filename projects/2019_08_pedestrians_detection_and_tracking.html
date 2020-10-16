@@ -1,0 +1,307 @@
+<!--
+    The MIT License (MIT)
+
+    Copyright (c) 2013-2020 Start Bootstrap LLC
+
+    Permission is hereby granted, free of charge, to any person obtaining a copy
+    of this software and associated documentation files (the "Software"), to deal
+    in the Software without restriction, including without limitation the rights
+    to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+    copies of the Software, and to permit persons to whom the Software is
+    furnished to do so, subject to the following conditions:
+
+    The above copyright notice and this permission notice shall be included in
+    all copies or substantial portions of the Software.
+
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+    FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+    AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+    OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+    THE SOFTWARE.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <title>De's Spectacle</title>
+  <!-- Favicon-->
+  <link rel="icon" type="image/x-icon" href="../assets/img/icon.png" />
+  <!-- Font Awesome icons (free version)-->
+  <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
+  <!-- Google fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet"
+    type="text/css" />
+  <!-- Core theme CSS (includes Bootstrap)-->
+  <link href="../assets/css/styles.css" rel="stylesheet" />
+  <link href="../assets/css/custom.css" rel="stylesheet" />
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<body id="page-top">
+  <!-- Navigation-->
+  <nav class="navbar navbar-expand-lg custom-primary text-uppercase fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">De's Spectacle</a>
+      <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded"
+        type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
+        aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger font-weight-bold"
+              href="../index.html">Home</a>
+          </li>
+          <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger font-weight-bold"
+              href="../projects.html">Projects</a>
+          </li>
+          <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger font-weight-bold"
+              href="../about.html">About</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Project Section-->
+  <section class="page-section text-secondary" style="padding-top: calc(6rem + 74px)" id="about">
+    <div class="container">
+      <!-- Project Section Heading-->
+      <h2 class="page-section-heading text-center text-uppercase text-secondary">
+        Pedestrians Detection and Tracking System
+      </h2>
+
+      <!-- Icon Divider-->
+      <div class="divider-custom">
+        <div class="divider-custom-line"></div>
+        <div class="divider-custom-icon font-weight-bold">
+          <i class="fab fa-python"></i> | OpenCV
+        </div>
+        <div class="divider-custom-line"></div>
+      </div>
+
+      <!-- Project Section Description-->
+      <div class="row justify-content-md-center py-3">
+        <div class="col-lg-9">
+          <p class="py-2">
+            The pedestrians detection and tracking system in this writing is developed using Python 3.7 as the
+            programming language and OpenCV 3 as a library for image processing and computer vision. The input of this
+            program are videos of pedestrians crossing the road. Videos will be read frame by frame. Detection will be
+            done on the first frame of the video and after that it will be done every 15 frames. This is done because
+            computational costs for detection are more expensive than tracking. The output of the detection stage is in
+            the form of a bounding box for the detected object (in this case the object is a human). The output will
+            then be detected for its unique features. These unique features will be used in the tracking process. The
+            tracing process will be carried out for every frame that is read. After that, the system will determine
+            whether anyone is crossing the road or whether anyone is on the side of the road to cross. The output of
+            this state will be displayed. The whole process will be repeated until the entire frame on the video has
+            been read (the end of the video is reached).
+          </p>
+          <p class="pt-2">Resources I used:</p>
+          <ol>
+            <li>Python 3.7<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup>, programming language used
+              for projects (installed with anaconda)</li>
+            <li>OpenCV 3<sup class="footnote-ref"><a href="#fn2" id="fnref2">[2]</a></sup>, library for image processing
+              and computer vision (installed with anaconda package installer)</li>
+            <li>Caffe version of MobileNet-SSD model<sup class="footnote-ref"><a href="#fn3" id="fnref3">[3]</a></sup>,
+              the model used to detect pedestrians.</li>
+            <li>imutils<sup class="footnote-ref"><a href="#fn4" id="fnref4">[4]</a></sup>, a convenient library for some
+              basic image processing functions such as resizing, rotation, translation, etc.</li>
+          </ol>
+        </div>
+      </div>
+
+      <!-- Project Section Videos-->
+      <div class="row justify-content-md-center py-3">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/AStPIdDzYm0" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+
+      <!-- Project Section Details-->
+      <div class="row justify-content-md-center py-3">
+        <div class="col-lg-9">
+          <h3 class="font-weight-bold pt-2">
+            PEDESTRIANS DETECTION
+          </h3>
+          <p class="pb-2">
+            Before the object is detected, the frame that is read will be resized to the predetermined size. The value
+            of the height (H) and width (W) of the frame will be read. Then a mask (binary image) with a height H and a
+            width W is initialized with the value of all elements equal to zero.
+          </p>
+          <p class="pb-2">
+            The frame that is read will be used as input for the MobileNet-SSD deep learning model. The model will
+            provide an output in the form of list of objects detected in the frame. Then iteration on these list of
+            objects is carried out. The degree of confidence for each object will be seen. &quot;People&quot; objects
+            those are detected with a degree of confidence (confidence value) above 0.2 will be accepted by the system.
+            The value 0.2 is used after several experiments and comparisons. The output of the detection stage, which is
+            the bounding box of each detected human object, will be used as a mask for searching unique features on
+            detected human objects.
+          </p>
+          <p class="pb-2">
+            In search of unique features, the Shi-Tomasi Corner Detector method<sup class="footnote-ref"><a href="#fn5"
+                id="fnref5">[5]</a></sup> is applied to the masked original frame. That way, the pedestrian tracking
+            system will only look for unique features on human objects that have been detected and not the entire area
+            of frame. The system will look for unique features in each bounding box that results from the human
+            detection algorithm. The coordinates of these unique features will be grouped based on the bounding box
+            where the coordinates are located. This is done because of the characteristics of the Lucas-Kanade optical
+            flow method in OpenCV, which only tracks a few pixel points on the object. These characteristics cause the
+            system to not know which object the tracked pixel originates from. By knowing the coordinates of the object
+            bounding box prior to the implementation of Shi-Tomasi corner detection, the system can find out which
+            object bounding box the tracked pixel points come from. The output of this process is a frame that has been
+            marked with unique features, an array of unique features (an array of corners in the flowchart), and an
+            array that stores information about the bounding box of the object to which the unique feature originates.
+          </p>
+        </div>
+      </div>
+
+      <div class="row justify-content-md-center py-3">
+        <div class="col-lg-9">
+          <h3 class="font-weight-bold pt-2">
+            PEDESTRIANS TRACKING
+          </h3>
+          <p class="pb-2">
+            At the tracking stage, the unique features obtained in the previous process will be tracked using the
+            Lucas-Kanade optical flow method<sup class="footnote-ref"><a href="#fn6" id="fnref6">[6]</a></sup>. The
+            unique features will be tracked and updated. The displacement of these unique features will be averaged
+            based on the bounding box group. This value will be considered as the value of the detected object bounding
+            box displacement. When tracking, the system will periodically re-detect objects on the current frame. This
+            is to overcome a situation when a new object appears or an old object has disappeared.
+          </p>
+        </div>
+      </div>
+
+      <!-- Project Section Resources & References-->
+      <div class="row justify-content-md-center py-3">
+        <div class="col-lg-9">
+          <h3 class="font-weight-bold pt-2">
+            RESOURCES & REFERENCES
+          </h3>
+          <ol class="footnotes-list">
+            <li id="fn1" class="footnote-item">
+              <p>Anaconda Inc., n.d. <a href="https://www.anaconda.com/products/individual" target="_blank">Individual
+                  Edition - Your data science toolkit.</a> Available at: <a href="http://anaconda.com">anaconda.com</a>
+                [Retrieved: 15 Oct 2020] <a href="#fnref1" class="footnote-backref"><i
+                    class="fas fa-caret-square-up"></i></a></p>
+            </li>
+            <li id="fn2" class="footnote-item">
+              <p>Anaconda Inc., 2017. <a href="https://anaconda.org/menpo/opencv3" target="_blank">Anaconda Cloud -
+                  menpo / packages / opencv3 3.2.0.</a> Available at: <a href="http://anaconda.org">anaconda.org</a>
+                [Retrieved: 15 Oct 2020] <a href="#fnref2" class="footnote-backref"><i
+                    class="fas fa-caret-square-up"></i></a></p>
+            </li>
+            <li id="fn3" class="footnote-item">
+              <p>chuanqi305, 2018. <a href="https://github.com/chuanqi305/MobileNet-SSD"
+                  target="_blank">MobileNet-SSD.</a> Available at: <a href="http://github.com">github.com</a>
+                [Retrieved: 23 July 2019] <a href="#fnref3" class="footnote-backref"><i
+                    class="fas fa-caret-square-up"></i></a></p>
+            </li>
+            <li id="fn4" class="footnote-item">
+              <p>Anaconda Inc., 2020. <a href="https://anaconda.org/conda-forge/imutils" target="_blank">Anaconda Cloud
+                  - conda-forge / packages / imutils 0.5.3</a> Available at: <a
+                  href="http://anaconda.org">anaconda.org</a> [Retrieved: 15 Oct 2020] <a href="#fnref4"
+                  class="footnote-backref"><i class="fas fa-caret-square-up"></i></a></p>
+            </li>
+            <li id="fn5" class="footnote-item">
+              <p>OpenCV., n.d. <a
+                  href="https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_feature2d/py_shi_tomasi/py_shi_tomasi.html"
+                  target="_blank">Shi-Tomasi Corner Detector &amp; Good Features to Track.</a> Available at: <a
+                  href="http://opencv-python-tutroals.readthedocs.io">opencv-python-tutroals.readthedocs.io</a>
+                [Retrieved: 15 Oct 2020] <a href="#fnref5" class="footnote-backref"><i
+                    class="fas fa-caret-square-up"></i></a></p>
+            </li>
+            <li id="fn6" class="footnote-item">
+              <p>OpenCV., n.d. <a
+                  href="https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_video/py_lucas_kanade/py_lucas_kanade.html"
+                  target="_blank">Optical Flow.</a> Available at: <a
+                  href="http://opencv-python-tutroals.readthedocs.io">opencv-python-tutroals.readthedocs.io</a>
+                [Retrieved: 15 Oct 2020] <a href="#fnref6" class="footnote-backref"><i
+                    class="fas fa-caret-square-up"></i></a></p>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Footer-->
+  <footer class="footer custom-primary text-center">
+    <div class="container">
+      <div class="row">
+        <!-- Footer Social Icons-->
+        <div class="col-lg-12 mb-5 mb-lg-0">
+          <h4 class="text-uppercase mb-4">Me Around the Web</h4>
+          <a class="btn btn-outline-light btn-social mx-1" href="#!" data-toggle="popover_linkedin"
+            data-placement="bottom"
+            data-content="<a href='https://www.linkedin.com/in/deachintiaputri/' target='_blank'>My LinkedIn (Click to see)</a>">
+            <i class="fab fa-fw fa-linkedin-in"></i>
+          </a>
+          <a class="btn btn-outline-light btn-social mx-1" href="#!" data-toggle="popover_mail" data-placement="bottom"
+            data-content="<a href='mailto:dea.chintiaputri@gmail.com' >dea.chintiaputri@gmail.com (Click to mail)</a>">
+            <i class="fas fa-envelope"></i>
+          </a>
+          <a class="btn btn-outline-light btn-social mx-1" href="#!" data-toggle="popover_github"
+            data-placement="bottom"
+            data-content="<a href='https://github.com/DeaChintia' target='_blank'>My Github (Click to see)</a>">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Copyright Section-->
+  <div class="copyright custom-secondary py-4 text-center text-white">
+    <div class="container">
+      <small>Copyright © Dea Chintia Putri - 2020</small>
+    </div>
+  </div>
+  <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes)-->
+  <div class="scroll-to-top d-lg-none position-fixed">
+    <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top"><i
+        class="fa fa-chevron-up"></i></a>
+  </div>
+  <!-- Bootstrap core JS-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+  <!-- Third party plugin JS-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+  <!-- Core theme JS-->
+  <script src="../assets/js/scripts.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('[data-toggle="tooltip"]').tooltip();
+      $('[data-toggle="popover_linkedin"]').popover({
+        html: true,
+      });
+      $('[data-toggle="popover_mail"]').popover({
+        html: true,
+      });
+      $('[data-toggle="popover_github"]').popover({
+        html: true,
+      });
+    });
+
+    $(document).on("click", 'a[href^="#"]', function (event) {
+      event.preventDefault();
+
+      $("html, body").animate({
+          scrollTop: $($.attr(this, "href")).offset().top - $('#mainNav').height() - 20,
+        },
+        500
+      );
+    });
+  </script>
+</body>
+
+</html>
